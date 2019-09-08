@@ -1,0 +1,25 @@
+{
+  "name": "cdl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keldar67/CDL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keldar67/CDL/issues"
+  },
+  "homepage": "https://github.com/keldar67/CDL#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.13",
+    "nodemon": "^1.19.2"
+  }
+}

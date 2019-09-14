@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const bodyparser = require('body-parser');
 
 //Import Routes
 const authRoute = require('./routes/auth.');
@@ -13,7 +14,7 @@ mongoose.connect(process.env.DB_CONNECT,{useNewUrlParser: true}, () =>
 console.log('connected to the CDL Database'));
 
 //Middleware
-app.use(express.json());
+app.use(bodyparser.json());
 
 //Route Middlewares
 app.use('/api/user', authRoute);

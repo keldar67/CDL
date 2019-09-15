@@ -25,15 +25,6 @@ const registervalidation = data => {
 
 const loginvalidation = data => {
     const schema = {
-        fname: Joi.string()
-            .min(2)
-            .required(),
-        lname: Joi.string()
-            .min(2)
-            .required(),
-        nickname: Joi.string()
-            .min(6)
-            .required(),
         email: Joi.string()
             .min(6)
             .required()
